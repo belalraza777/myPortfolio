@@ -25,6 +25,17 @@ ScrollReveal().reveal('.reveal', {
 });
 
 //Storing Data of Input
+let email = document.querySelector("#email");
+let message = document.querySelector(".message");
+let subject = document.querySelector("#subject");
+let submitBtn = document.querySelector("#submit");
 
+submitBtn.addEventListener("click", () => {
+    localStorage.setItem(email.value, `Subject:- { ${subject.value}}  Message:- {${message.value}}`);
+    email.value="";
+    message.value="";
+    subject.value=";"
+    alert("Message Sent.....");
+});
 
 
