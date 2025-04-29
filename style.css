@@ -8,6 +8,7 @@ body {
     color: white;
     font-family: 'Inter', sans-serif;
     transition-duration: 1.5s;
+    scroll-behavior: smooth;
 }
 
 hr {
@@ -85,6 +86,7 @@ hr {
     justify-content: space-around;
     align-self: center;
     margin-top: 76px;
+    height: 100%;
 }
 
 .p1Left {
@@ -136,7 +138,7 @@ hr {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
+    height: 100%;
 }
 
 .p2Left {
@@ -190,7 +192,9 @@ hr {
 }
 
 /* Page 3 */
-.page3 {}
+.page3 {
+    height: 100%;
+}
 
 .page3 .boxContent {
     display: flex;
@@ -227,6 +231,7 @@ hr {
 .page4 h1 {
     font-size: 45px;
     margin: 58px;
+    height: 100%;
 }
 
 .page4 .proBoxContent {
@@ -283,7 +288,9 @@ hr {
 }
 
 /* contact */
-.contact {}
+.contact {
+    height: 100%;
+}
 
 .contact h1 {
     font-size: 45px;
