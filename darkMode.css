@@ -13,6 +13,11 @@
     transform: scale(1.2);
     box-shadow: 0.5px 0.5px 6px rgb(45, 45, 108);
 }
+.dark-mode #mode{
+    background-color: #111;
+    color: white;
+    border: 0.1px solid #111;
+}
 
 /* Dark Mode Base */
 .dark-mode {
@@ -33,7 +38,8 @@
 .dark-mode button,
 .dark-mode .cv button,
 .dark-mode a .preview,
-.dark-mode .text-gradient-btn {
+.dark-mode .text-gradient-btn,
+.dark-mode #submit {
     background-color: #333;
     color: #fff;
     border: 1px solid #fff;
