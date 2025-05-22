@@ -1,18 +1,19 @@
 #mode {
-    width: 30px;
-    height: 30px;
-    padding: 3px;
-    border-radius: 15px; 
-    border: 0.1px solid rgb(45, 45, 108);
-    transition-duration: 1s;
-    font-size: 25px;
-    background-color: rgb(45, 45, 108);
+    background: transparent;
+    border: none;
     color: white;
+    cursor: pointer;
+    font-size: 24px;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
 }
-#mode:hover{
-    transform: scale(1.2);
-    box-shadow: 0.5px 0.5px 6px rgb(45, 45, 108);
+
+#mode:hover {
+    color: #f2a900;
 }
+
 .dark-mode #mode{
     background-color: #111;
     color: white;
