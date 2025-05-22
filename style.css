@@ -125,7 +125,7 @@ hr {
     width: 40%;
 }
 
-.p1Right img{
+.p1Right img {
     width: 365px;
     height: 365px;
     margin: 20px 60px;
@@ -200,6 +200,7 @@ hr {
     display: flex;
     margin: 58px;
     flex-wrap: wrap;
+    gap: 100px;
     justify-content: space-around;
 }
 
@@ -360,7 +361,8 @@ hr {
     padding: 5px;
     letter-spacing: 5px;
 }
-.cRight div button:hover{
+
+.cRight div button:hover {
     transform: scale(1.05);
     box-shadow: 0px 0px 5px white;
 }
