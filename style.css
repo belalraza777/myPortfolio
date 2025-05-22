@@ -209,9 +209,14 @@ hr {
 }
 
 .page3 .box {
-    background-color: rgb(13, 11, 69);
-    border-radius: 8px;
-    box-shadow: 1px 1px 6px rgb(255, 250, 250);
+    background-color: rgb(13, 12, 48);
+    border-radius: 6px;
+    box-shadow: 1px 1px 6px rgb(125, 91, 184);
+    transition-duration: 1s;
+}
+.page3 .box:hover{
+    transform: scale(1.03);
+    box-shadow: 1px 1px 6px rgb(15, 16, 65);
 }
 
 .page3 .box p {
@@ -260,7 +265,7 @@ hr {
 }
 
 .page4 .proBox:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .page4 img {
@@ -454,7 +459,7 @@ footer {
     font-size: 14px;
 }
 
-/* extra*/
+/* headings*/
 .section-heading {
     font-size: 45px;
     margin: 58px auto;
