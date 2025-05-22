@@ -1,0 +1,187 @@
+/* Mobile Responsive Styles */
+@media only screen and (max-width: 768px) {
+    /* General adjustments */
+    body {
+        overflow-x: hidden;
+    }
+    
+    hr {
+        margin: 30px 20px;
+    }
+    
+    /* Navigation */
+    .navbar {
+        height: auto;
+        padding: 10px 0;
+        flex-direction: column;
+    }
+    
+    .navLeft {
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+    
+    .navRight ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .navRight ul li {
+        margin: 5px 10px;
+    }
+    
+    /* Page 1 */
+    .page1 {
+        margin-top: 100px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+    .p1Left, .p1Right {
+        width: 90%;
+        text-align: center;
+    }
+    
+    .p1Left .text {
+        font-size: 28px;
+    }
+    
+    .p1Left .social ul {
+        justify-content: center;
+    }
+    
+    .p1Right img {
+        width: 250px;
+        height: 250px;
+        margin: 20px auto;
+    }
+    
+    /* Page 2 */
+    .page2 {
+        flex-direction: column;
+    }
+    
+    .p2Left, .p2Right {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .p2Left h1 {
+        margin: 20px 0;
+        font-size: 36px;
+    }
+    
+    .p2Left p {
+        font-size: 18px;
+        margin: 20px 0;
+    }
+    
+    .p2Right img {
+        width: 250px;
+        height: 250px;
+        margin: 20px auto;
+    }
+    
+    /* Page 3 */
+    .page3 h1 {
+        margin: 30px 20px;
+        font-size: 36px;
+        text-align: center;
+    }
+    
+    .page3 .boxContent {
+        margin: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .page3 .box {
+        margin-bottom: 20px;
+        /* width: 80%; */
+    }
+    
+    /* Page 4 */
+    .page4 h1 {
+        margin: 30px 20px;
+        font-size: 36px;
+        text-align: center;
+    }
+    
+    .page4 .proBoxContent {
+        margin: 20px;
+        justify-content: center;
+    }
+    
+    .page4 .proBox {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    
+    .page4 .button {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .page4 .proBox button {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    
+    /* Contact */
+    .contact h1 {
+        margin: 30px 20px;
+        font-size: 36px;
+        text-align: center;
+    }
+    
+    .contact .cBox {
+        margin: 20px;
+        flex-direction: column;
+    }
+    
+    .contact .cLeft, .contact .cRight {
+        width: 90%;
+        margin: 0 auto 30px;
+    }
+    
+    .contact .cLeft div div {
+        margin: 15px 0;
+    }
+    
+    .cRight div button {
+        width: 100%;
+    }
+    
+    /* Footer */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}
+
+/* Smaller mobile devices */
+@media only screen and (max-width: 480px) {
+    .p1Left .text {
+        font-size: 24px;
+    }
+    
+    .p1Right img, .p2Right img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .p2Left h1, .page3 h1, .page4 h1, .contact h1 {
+        font-size: 30px;
+    }
+    
+    .navRight ul li a {
+        margin: 5px 15px;
+        font-size: 16px;
+    }
+}
