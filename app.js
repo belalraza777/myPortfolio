@@ -17,12 +17,21 @@ modeBtn.addEventListener("click", function () {
 
 //animation scroll
 ScrollReveal().reveal('.reveal', {
-    distance: '80px',
+    distance: '150px',
     duration: 1500,
     easing: 'ease-in-out',
     origin: 'top',
-    interval: 300,
+    interval: 400,
 });
+ScrollReveal().reveal('.reveal2', {
+    distance: '100px',
+    duration: 1500,
+    easing: 'ease-in-out',
+    origin: 'bottom',
+    interval: 400,
+});
+
+
 
 //Storing Data of Input
 let email = document.querySelector("#email");
@@ -32,10 +41,23 @@ let submitBtn = document.querySelector("#submit");
 
 submitBtn.addEventListener("click", () => {
     localStorage.setItem(email.value, `Subject:- { ${subject.value}}  Message:- {${message.value}}`);
-    email.value="";
-    message.value="";
-    subject.value=";"
+    email.value = "";
+    message.value = "";
+    subject.value = ";"
     alert("Message Sent.....");
+});
+
+
+//text
+new Typed('#typed-text', {
+    strings: [
+        "Software Developer.",
+        "WEB Developer.",
+        "MERN Stack Developer."
+    ],
+    typeSpeed: 80,
+    backSpeed: 60,
+    loop: true
 });
 
 
