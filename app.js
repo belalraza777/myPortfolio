@@ -33,19 +33,26 @@ ScrollReveal().reveal('.reveal2', {
 
 
 
-//Storing Data of Input
-let email = document.querySelector("#email");
-let message = document.querySelector(".message");
-let subject = document.querySelector("#subject");
-let submitBtn = document.querySelector("#submit");
+//email
+let form = document.querySelector("#form");
+(function(){
+    emailjs.init("JZBUe18LOeXttcc9l"); // 🟢 Replace with your Public Key
+  })();
 
-submitBtn.addEventListener("click", () => {
-    localStorage.setItem(email.value, `Subject:- { ${subject.value}}  Message:- {${message.value}}`);
-    email.value = "";
-    message.value = "";
-    subject.value = ";"
-    alert("Message Sent.....");
-});
+  form.addEventListener("submit", function(e) {
+
+    e.preventDefault();
+
+    emailjs.sendForm("service_n0brl8b", "template_8pufnkm", this)
+      .then(() => {
+        alert("✅ Message sent successfully!");
+        this.reset(); // clear form
+      }, (err) => {
+        alert(" Failed to send message. Try again.");
+        console.error(err);
+      });
+  });
+
 
 
 //text
