@@ -6,14 +6,15 @@
     }
     
     hr {
-        margin: 30px 20px;
+        margin: 40px 20px;
     }
     
     /* Navigation */
     .navbar {
         height: auto;
-        padding: 10px 0;
+        padding: 15px 0;
         flex-direction: column;
+        gap: 15px;
     }
     
     .navLeft {
@@ -24,45 +25,67 @@
     .navRight ul {
         flex-wrap: wrap;
         justify-content: center;
+        gap: 5px;
     }
     
     .navRight ul li {
+        margin: 5px 8px;
+    }
+    
+    .navRight ul li a {
+        font-size: 14px;
         margin: 5px 10px;
     }
     
     /* Page 1 */
     .page1 {
-        margin-top: 100px;
+        margin-top: 120px;
         flex-direction: column-reverse;
         align-items: center;
+        padding: 0 20px;
+        min-height: auto;
     }
     
     .p1Left, .p1Right {
-        width: 90%;
+        width: 100%;
         text-align: center;
     }
     
+    .p1Left {
+        margin-top: 30px;
+    }
+    
     .p1Left .text {
-        font-size: 28px;
+        font-size: 32px;
+        margin-bottom: 20px;
     }
     
     .p1Left .social ul {
         justify-content: center;
+        gap: 15px;
+        margin-top: 30px;
+    }
+    
+    .p1Left .social a {
+        width: 45px;
+        height: 45px;
     }
     
     .p1Right img {
-        width: 250px;
-        height: 250px;
+        width: 280px;
+        height: 280px;
         margin: 20px auto;
     }
     
     /* Page 2 */
     .page2 {
         flex-direction: column;
+        padding: 0 20px;
+        min-height: auto;
     }
     
     .p2Left, .p2Right {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         text-align: center;
     }
@@ -78,12 +101,17 @@
     }
     
     .p2Right img {
-        width: 250px;
-        height: 250px;
+        width: 280px;
+        height: 280px;
         margin: 20px auto;
     }
     
     /* Page 3 */
+    .page3 {
+        padding: 30px 20px;
+        min-height: auto;
+    }
+    
     .page3 h1 {
         margin: 30px 20px;
         font-size: 36px;
@@ -91,16 +119,29 @@
     }
     
     .page3 .boxContent {
-        margin: 20px;
-        flex-direction: column;
-        align-items: center;
+        margin: 30px 0;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
     }
     
     .page3 .box {
-        margin-bottom: 5px;
+        padding: 20px 15px;
+    }
+    
+    .page3 .box i {
+        font-size: 50px;
+    }
+    
+    .page3 .box p {
+        font-size: 16px;
     }
     
     /* Page 4 */
+    .page4 {
+        padding: 30px 20px;
+        min-height: auto;
+    }
+    
     .page4 h1 {
         margin: 30px 20px;
         font-size: 36px;
@@ -108,26 +149,34 @@
     }
     
     .page4 .proBoxContent {
-        margin: 20px;
-        justify-content: center;
+        margin: 30px 0;
+        grid-template-columns: 1fr;
+        gap: 30px;
     }
     
     .page4 .proBox {
-        width: 90%;
-        margin-bottom: 30px;
+        width: 100%;
+        margin-bottom: 0;
+        padding: 25px;
     }
     
     .page4 .button {
         display: flex;
         flex-direction: column;
+        gap: 10px;
     }
     
     .page4 .proBox button {
-        margin-bottom: 10px;
+        margin-bottom: 0;
         width: 100%;
     }
     
     /* Contact */
+    .contact {
+        padding: 30px 20px;
+        min-height: auto;
+    }
+    
     .contact h1 {
         margin: 30px 20px;
         font-size: 36px;
@@ -135,17 +184,19 @@
     }
     
     .contact .cBox {
-        margin: 20px;
-        flex-direction: column;
+        margin: 30px 0;
+        grid-template-columns: 1fr;
+        gap: 40px;
     }
     
     .contact .cLeft, .contact .cRight {
-        width: 90%;
-        margin: 0 auto 30px;
+        width: 100%;
+        margin: 0 auto;
     }
     
     .contact .cLeft div div {
         margin: 15px 0;
+        padding: 15px;
     }
     
     .cRight div button {
@@ -154,33 +205,123 @@
     
     /* Footer */
     .footer-container {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 1fr;
+        gap: 30px;
         text-align: center;
     }
     
     .footer-section {
         margin-bottom: 20px;
     }
+    
+    .social-icons {
+        justify-content: center;
+    }
 }
 
 /* Smaller mobile devices */
 @media only screen and (max-width: 480px) {
     .p1Left .text {
-        font-size: 24px;
+        font-size: 28px;
     }
     
     .p1Right img, .p2Right img {
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
     }
     
     .p2Left h1, .page3 h1, .page4 h1, .contact h1 {
-        font-size: 30px;
+        font-size: 32px;
     }
     
     .navRight ul li a {
-        margin: 5px 15px;
-        font-size: 16px;
+        margin: 5px 8px;
+        font-size: 13px;
+    }
+    
+    .page3 .boxContent {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .page3 .box {
+        padding: 15px 10px;
+    }
+    
+    .page3 .box i {
+        font-size: 40px;
+    }
+    
+    .page3 .box p {
+        font-size: 14px;
+    }
+    
+    .contact .cLeft div div {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .contact .cLeft div div i {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+    }
+}
+
+/* Tablet styles */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .page1, .page2 {
+        padding: 0 30px;
+    }
+    
+    .p1Left, .p2Left {
+        width: 50%;
+    }
+    
+    .p1Right, .p2Right {
+        width: 45%;
+    }
+    
+    .p1Right img, .p2Right img {
+        width: 350px;
+        height: 350px;
+    }
+    
+    .page3 .boxContent {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 25px;
+    }
+    
+    .page4 .proBoxContent {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+    }
+    
+    .contact .cBox {
+        gap: 40px;
+    }
+}
+
+/* Large screens */
+@media only screen and (min-width: 1025px) {
+    .page1, .page2 {
+        padding: 0 80px;
+    }
+    
+    .page3, .page4, .contact {
+        padding: 60px 80px;
+    }
+    
+    .page3 .boxContent {
+        max-width: 1400px;
+    }
+    
+    .page4 .proBoxContent {
+        max-width: 1400px;
+    }
+    
+    .contact .cBox {
+        max-width: 1400px;
     }
 }
