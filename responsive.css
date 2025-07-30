@@ -149,13 +149,14 @@
     }
     
     .page4 .proBoxContent {
-        margin: 30px 0;
+        margin: 40px 0;
         grid-template-columns: 1fr;
         gap: 30px;
     }
     
     .page4 .proBox {
         width: 100%;
+        height: max-content;
         margin-bottom: 0;
         padding: 25px;
     }
