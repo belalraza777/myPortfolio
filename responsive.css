@@ -330,9 +330,9 @@
 /* more smaller mobile */
 @media only screen and (max-width: 400px) {
 .navRight ul {
-        flex-wrap: wrap;
         justify-content: center;
         gap: 1px;
+        flex-wrap: nowrap;
     }
     
     .navRight ul li {
