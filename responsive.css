@@ -326,3 +326,21 @@
         max-width: 1400px;
     }
 }
+
+/* more smaller mobile */
+@media only screen and (max-width: 400px) {
+.navRight ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1px
+    }
+    
+    .navRight ul li {
+        margin: 0px 0px;
+    }
+    
+    .navRight ul li a {
+        font-size: 14px;
+        margin: 5px 10px;
+    }
+}
