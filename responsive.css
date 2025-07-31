@@ -332,7 +332,7 @@
 .navRight ul {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 1px
+        gap: 1px;
     }
     
     .navRight ul li {
