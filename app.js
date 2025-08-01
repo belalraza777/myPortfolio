@@ -200,6 +200,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // =========================
+// Hamburger menu toggle for mobile navbar
+// =========================
+// Get the hamburger button and nav links list
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+
+// Add click event to toggle the 'show' class on nav links
+if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => {
+        // Toggle the 'show' class to display/hide nav links
+        navLinks.classList.toggle('show');
+    });
+}
+
+// =========================
 // Hover Effects for Skill and Project Boxes
 // =========================
 // Adds interactive hover effects to skill and project cards

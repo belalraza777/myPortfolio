@@ -148,6 +148,11 @@ hr {
     transform: translateY(-2px); /* Slight lift */
 }
 
+/* Hide hamburger button by default (desktop view) */
+.hamburger {
+    display: none;
+}
+
 /* =========================
    Hero Section (Page 1)
    ========================= */

@@ -1,44 +1,59 @@
+/* =========================
+   Modern Dark/Day Mode Button
+   ========================= */
 #mode {
-    background: transparent;
-    border: none;
-    color: white;
-    cursor: pointer;
-    font-size: 24px;
-    margin-left: 20px;
-    transition: all 0.3s ease;
     display: flex;
     align-items: center;
-    padding: 8px;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: rgba(40, 40, 60, 0.7); /* Glassy background */
+    border: 2px solid #667eea; /* Always show premium border */
     border-radius: 50%;
+    box-shadow: 0 4px 16px rgba(102, 126, 234, 0.10);
     position: relative;
     overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(.4,2,.6,1);
+    margin-left: 20px;
+    font-size: 26px; /* Larger icon */
 }
-
 #mode::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
-    transition: left 0.5s;
+    inset: -2px;
+    border-radius: 50%;
+    padding: 2px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    z-index: 0;
+    opacity: 0.7;
+    transition: opacity 0.3s;
 }
-
-#mode:hover::before {
-    left: 100%;
+#mode i {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-size: 1.2em;
+    transition: color 0.3s;
 }
-
 #mode:hover {
-    color: #667eea;
-    transform: scale(1.1);
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(102, 126, 234, 0.15);
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.25);
+    transform: scale(1.08);
 }
-
-.dark-mode #mode {
-    background: rgba(255, 255, 255, 0.1);
+#mode:hover::before {
+    opacity: 1;
+}
+#mode:hover i {
     color: #667eea;
-    border: 1px solid rgba(102, 126, 234, 0.3);
+}
+.dark-mode #mode {
+    background: rgba(255, 255, 255, 0.08);
+    color: #667eea;
+    /* Keep border the same as light mode for consistency */
+}
+.dark-mode #mode i {
+    color: #667eea;
 }
 
 /* Dark Mode Base */
